@@ -1,22 +1,35 @@
 .GoalForm {
-    background-color: lightgrey;
+    background-color: lightsteelblue;
     width: 90vw;
     margin: auto;
 
 }
 
-ul {
+ul.list {
     list-style: none;
 }
 
-li {
+ul.list li {
     display: inline-block;
     width: 300px;
     text-align: left;
-    border-radius: 5px;
-    margin: 10px;
-    background-color: #585c63;
-    color: white;
+    margin: 0 30px;
+    background-color: cornsilk;
+    color: #454545;
     padding: 10px;
     font-weight: bold;
+}
+
+button {
+    display: inline-block;
+    background-color: #585c63;
+    color: cornsilk;
+    
+}
+button.btnlist {
+    float: right;
+}
+button:hover {
+    background-color: lightgray;
+    color: #585c63;
 }

@@ -1,5 +1,24 @@
 .ListGoalsPage {
-    background-color: cornsilk;
+    background-color: lightsteelblue;
     display: flex;
     flex-direction: column;
+}
+
+h1 {
+    color:#454545;
+}
+
+ul.head {
+    list-style: none;}
+
+ul.head li {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    border-radius: 5px;
+    margin: 0 20px;
+    background-color: #585c63;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
 }

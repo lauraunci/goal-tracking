@@ -1,18 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './GoalForm.css';
 
-class GoalForm extends Component {
-    render() {
-      return (
-        <div className ="GoalForm">
-            <ul>
-                <li>ToDo</li>
-                <li>In progress</li>
-                <li>Done</li>
-            </ul>
-        </div>
-      )
-    }
-  }
+function GoalForm({goal, handleDeleteGoal}) {
+  return (
+    <div className ="GoalForm">
+      <ul className='list'>
+        <Link to='/editgoal'><li>{goal.title}&nbsp;&nbsp;
+            <button
+              className='btnlist'
+              onClick={() => handleDeleteGoal(goal._id)}
+            >
+            X
+            </button></li></Link>
+        <li>{}</li>
+        <li>{}</li>
+      </ul>
+    </div>
+  )
+}
   
   export default GoalForm;

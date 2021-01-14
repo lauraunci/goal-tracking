@@ -8,8 +8,7 @@ class AddGoalPage extends Component {
         super();
         this.state = {
             title: '',
-            description: '',
-            // date: ''
+            description: ''
         };
     }
     
@@ -35,11 +34,11 @@ class AddGoalPage extends Component {
 
     render() {
         return(
-            <div>
+            <div className='add-goal'>
                 <h1>Add Goal</h1>
                 <form autoComplete='off' onSubmit={this.handleSubmit}>
                     <div className='form-group'>
-                        <label>Title</label>
+                        <label>Title:</label>&nbsp;&nbsp;&nbsp;
                         <input
                         type='text'
                         name='title'
@@ -51,7 +50,7 @@ class AddGoalPage extends Component {
                         />
                     </div>
                     <div className='form-group'>
-                        <label>Description</label>
+                        <label>Description:</label>&nbsp;&nbsp;&nbsp;
                         <input
                         type='text'
                         name='description'
@@ -62,23 +61,11 @@ class AddGoalPage extends Component {
                         required
                         />
                     </div>
-                    {/* <div className='form-group'>
-                        <label>Date</label>
-                        <input
-                        type='date'
-                        name='date'
-                        className='form-control'
-                        placeholder='Date'
-                        value={this.state.date}
-                        onChange={this.handleChange}
-                        required
-                        />
-                    </div> */}
                     <div>
                         <button
                         type='submit'
                         className='btn btn-default'
-                        // disabled={this.isFormInvalid()}
+                        disabled={this.isFormInvalid()}
                         >SUBMIT</button>&nbsp;&nbsp;&nbsp;
                         <Link to='/'>Cancel</Link>
                     </div>

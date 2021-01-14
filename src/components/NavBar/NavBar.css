@@ -1,5 +1,6 @@
 .NavBar {
     display: flex;
     justify-content: space-around;
-    background-color: #FCE7B0;
+    background-color: cornsilk;
+    padding: 10px;
   }

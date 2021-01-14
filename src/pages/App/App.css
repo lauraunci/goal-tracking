@@ -1,23 +1,24 @@
 .App {
   text-align: center;
+  background-color: cornsilk;
 }
 
 
 .App-header {
-  background-color: #92c1ed;
+  background-color: lightsteelblue;
   height: 50px;
   padding: 20px;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
   color: #454545;
   font-size: 40px;
   text-align: center;
 }
 
+.App-footer {
+  background-color: lightsteelblue;
+  height: 50px;
+}
 .App-link {
-  color: #61dafb;
+  color: #61dafb; 
 }
 
 

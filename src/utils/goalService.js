@@ -12,6 +12,26 @@ function create(goaldata) {
     });
 }
 
-export default {
-    create
+function getAll() {
+    return fetch(BASE_URL, {
+        method: 'GET',
+        headers: {'content-type': 'application/json'},
+    })
+    .then(res => res.json());
+}
+
+function deleteOne(id) {
+    return fetch(`${BASE_URL}/${id}`, {
+        method: 'DELETE',
+        headers: {'content-type': 'application/json'},
+    })
+    .then(res => res.json());
+}
+
+const data = {
+    create,
+    getAll,
+    deleteOne
 };
+
+export default data;
